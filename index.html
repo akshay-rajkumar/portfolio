@@ -101,6 +101,32 @@
                 transform: translateY(-3px);
                 box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
             }
+
+            /* ===================================
+               Certificates Section Styles
+               =================================== */
+            .certificates-section {
+                background: #fff;
+                padding: 80px 0;
+            }
+            .certificate-card {
+                background: white;
+                border-radius: 16px;
+                padding: 35px 25px;
+                text-align: center;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+                transition: all 0.3s ease;
+                border: 1px solid rgba(0, 0, 0, 0.05);
+            }
+            .certificate-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+            }
+            .certificate-icon {
+                font-size: 48px;
+                color: #f4c430;
+                margin-bottom: 20px;
+            }
         </style>
     </head>
     
@@ -111,7 +137,7 @@
              =================================== -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Portfolio</a>
+                <a class="navbar-brand" href="#page-top">Akshay A</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" 
                         data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
                         aria-controls="navbarResponsive" aria-expanded="false" 
@@ -124,6 +150,7 @@
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -260,22 +287,55 @@
             <div class="container px-4 px-lg-5">
                 
                 <!-- Featured Project: EKart -->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>EKart</h4>
-                            <p class="text-black-50 mb-0">
-                                Ekart is a Java-based e-commerce backend built with Spring Boot, 
-                                featuring RESTful APIs for products, carts, orders, and users, 
-                                with a strong focus on clean architecture and real-world backend design.
-                            </p>
+                <!-- <div class="row gx-0 mb-4 mb-lg-5 align-items-center"> -->
+                    <!-- <div class="col-xl-4 col-lg-5"> -->
+                        <!-- <div class="featured-text text-center text-lg-left"> -->
+                            <!-- <h4>EKart</h4> -->
+                            <!-- <p class="text-black-50 mb-0"> -->
+                                <!-- Ekart is a Java-based e-commerce backend built with Spring Boot,  -->
+                                <!-- featuring RESTful APIs for products, carts, orders, and users,  -->
+                                <!-- with a strong focus on clean architecture and real-world backend design. -->
+                            <!-- </p> -->
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-7">
-                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/project1.jpg" alt="EKart Project" />
+                        <!-- <img class="img-fluid mb-3 mb-lg-0" src="assets/img/project1.jpg" alt="EKart Project" /> -->
                     </div>
                 </div>
                 
+            </div>
+        </section>
+
+        <!-- ===================================
+             Certificates Section
+             =================================== -->
+        <section class="certificates-section" id="certificates">
+            <div class="container px-4 px-lg-5">
+                <div class="text-center mb-5">
+                    <h2 class="text-uppercase mb-3">Certificates</h2>
+                    <p class="text-muted">Professional certifications I've earned</p>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    
+                    <!-- Certificate 1 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="certificate-card h-100">
+                            <div class="certificate-icon mb-3">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4 class="text-uppercase mb-2">Programming In Java</h4>
+                            <p class="certificate-org text-muted mb-3">NPTEL</p>
+                            <p class="certificate-desc small text-muted">
+                                Completed comprehensive Java programming course covering fundamentals, 
+                                OOP, data structures, and algorithms.
+                            </p>
+                            <a href="assets/certificates/Programming In Java.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
+                                <i class="fas fa-external-link-alt me-1"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </section>
 
